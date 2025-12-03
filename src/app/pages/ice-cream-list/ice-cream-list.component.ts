@@ -90,6 +90,8 @@ export class IceCreamListComponent implements AfterViewInit {
 
     dialogRef.afterClosed().subscribe(result => {
       if (result) {
+        const { id, ...payload } = result;
+
         this.iceCreamService.create(result).subscribe({
           next: () => {
             this.snackBar.open('Sorvete criado com sucesso!', 'Fechar', { duration: 3000 });

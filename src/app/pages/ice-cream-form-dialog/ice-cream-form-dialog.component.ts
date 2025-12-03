@@ -47,8 +47,21 @@ export class IceCreamFormDialogComponent {
       this.form.markAllAsTouched();
       return;
     }
-    this.dialogRef.close(this.form.value);
+
+    const iceCream = this.form.value as IceCream;
+
+    let payload: any;
+
+    if (this.isEdit) {
+      payload = iceCream;
+    } else {
+      const { id, ...rest } = iceCream;
+      payload = rest;
+    }
+
+    this.dialogRef.close(payload);
   }
+
 
   cancel(): void {
     this.dialogRef.close();

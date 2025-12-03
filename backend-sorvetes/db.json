@@ -22,11 +22,18 @@
       "category": "Premium"
     },
     {
-      "id": null,
+      "id": "4",
       "name": "sorvete de limão",
-      "description": "meu limao meu limoreiro meu pé de jacarandá",
+      "description": "teste",
       "price": 5,
       "category": "frutas"
+    },
+    {
+      "id": "43df",
+      "name": "sorvete de chocomenta",
+      "description": "chocolate com menta",
+      "price": 20,
+      "category": "premium"
     }
   ]
 }
