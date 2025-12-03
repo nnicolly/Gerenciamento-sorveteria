@@ -1,17 +1,37 @@
-<mat-sidenav-container style="height: 100vh;">
-  <mat-sidenav mode="side" opened>
-    <h2 style="margin: 16px;">Sorveteria Admin</h2>
-    <button mat-button routerLink="/sorvetes">Sorvetes</button>
+<mat-sidenav-container class="layout">
+  <mat-sidenav class="side-nav" mode="side" opened>
+    <div class="brand">
+      <div class="brand-logo">🍦</div>
+      <div>
+        <h1>Sorveteria</h1>
+        <span>Admin</span>
+      </div>
+    </div>
+
+    <nav class="nav-links">
+      <button
+        mat-button
+        routerLink="/sorvetes"
+        routerLinkActive="active-link"
+      >
+        <mat-icon>icecream</mat-icon>
+        <span>Sorvetes</span>
+      </button>
+    </nav>
   </mat-sidenav>
 
   <mat-sidenav-content>
-    <mat-toolbar color="primary">
-      <span>Sistema de Gerenciamento de Sorvetes</span>
+    <mat-toolbar color="primary" class="top-bar">
+      <span class="top-title">Sistema de Gerenciamento de Sorvetes</span>
       <span class="spacer"></span>
-      <span>Admin</span>
+
+      <span class="user-pill">
+        <mat-icon>person</mat-icon>
+        <span>Admin</span>
+      </span>
     </mat-toolbar>
 
-    <div style="padding: 16px;">
+    <div class="content">
       <router-outlet></router-outlet>
     </div>
   </mat-sidenav-content>

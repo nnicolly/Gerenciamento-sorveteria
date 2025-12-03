@@ -9,6 +9,8 @@ import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
 import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
+import { MatIconModule } from '@angular/material/icon';
+
 
 import { IceCream } from '../../models/ice-cream.model';
 import { IceCreamService } from '../../services/ice-cream.service';
@@ -27,14 +29,16 @@ import { IceCreamFormDialogComponent } from '../ice-cream-form-dialog/ice-cream-
     MatInputModule,
     MatCardModule,
     MatSnackBarModule,
-    MatDialogModule
+    MatDialogModule,
+    MatIconModule
+
   ],
   templateUrl: './ice-cream-list.component.html',
   styleUrl: './ice-cream-list.component.css'
 })
 export class IceCreamListComponent implements AfterViewInit {
 
-  displayedColumns: string[] = ['id', 'name', 'category', 'price', 'actions'];
+  displayedColumns: string[] = ['name', 'category', 'price', 'actions'];
   dataSource = new MatTableDataSource<IceCream>([]);
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;

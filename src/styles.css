@@ -1,4 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+html,
+body {
+  height: 100%;
+}
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+  background: radial-gradient(circle at top left, #ffe3f0 0, #fff7fb 40%, #ffffff 100%);
+}
+
+.mat-mdc-sidenav-container {
+  background: transparent;
+}
