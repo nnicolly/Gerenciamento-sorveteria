@@ -1,59 +1,44 @@
-# SorvetesApp
+# Sorvetes App – Sistema de Gerenciamento de Sorvetes
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.10.
+Projeto feito para a disciplina de Programação Visual e Autoria Web; Consiste em uma aplicação web para gerenciamento de sorvetes de uma sorveteria.  
+Permite cadastrar, listar, filtrar, editar e excluir sabores, com uma interface simples de painel administrativo.
 
-## Development server
+O projeto é dividido em:
 
-To start a local development server, run:
+- **Frontend:** Angular, usando Angular Material para a interface.
+- **Backend:** `json-server`, simulando uma API REST a partir de um arquivo `db.json`.
 
-```bash
-ng serve
-```
+---
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Tecnologias utilizadas
 
-## Code scaffolding
+**Frontend**
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- Angular 20
+- Angular Material
+- TypeScript
+- HTML/CSS
 
-```bash
-ng generate component component-name
-```
+**Backend**
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+- Node.js
+- json-server
 
-```bash
-ng generate --help
-```
+---
 
-## Building
+## Funcionalidades
 
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- Listagem de sorvetes com:
+  - Nome
+  - Categoria
+  - Preço
+- Filtro por nome, categoria ou descrição.
+- Paginação e ordenação (sort) na tabela.
+- Cadastro de novos sorvetes.
+- Edição de sorvetes existentes.
+- Exclusão com confirmação.
+- Feedback visual com snackbar para sucesso ou erro nas operações.
+- Layout em formato de dashboard:
+  - Menu lateral com navegação.
+  - Topbar com título e usuário.
+  - Card central com tabela de sorvetes.
