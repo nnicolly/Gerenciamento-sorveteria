@@ -1,39 +1,11 @@
 {
   "icecreams": [
     {
-      "id": "1",
-      "name": "Sorvete de Chocolate",
-      "description": "Cremoso sabor chocolate belga",
-      "price": 15,
-      "category": "Tradicional"
-    },
-    {
-      "id": "2",
-      "name": "Sorvete de Morango",
-      "description": "Feito com pedaços de morango",
-      "price": 14,
-      "category": "Frutas"
-    },
-    {
-      "id": "3",
-      "name": "Sorvete de Pistache",
-      "description": "Pistache selecionado",
-      "price": 18,
-      "category": "Premium"
-    },
-    {
       "id": "4",
       "name": "sorvete de limão",
       "description": "teste",
       "price": 5,
       "category": "frutas"
-    },
-    {
-      "id": "43df",
-      "name": "sorvete de chocomenta",
-      "description": "chocolate com menta",
-      "price": 20,
-      "category": "premium"
     }
   ]
 }
